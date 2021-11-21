@@ -8,7 +8,7 @@ class socials(commands.Cog, name="socials"):
         self.bot = client
 
     @commands.command()
-    async def socials(ctx):
+    async def socials(self, ctx):
         embed = discord.Embed()
         embed.description = "[Github](https://github.com/Bauddhik-Geeks)"
         await ctx.send(embed=embed)
