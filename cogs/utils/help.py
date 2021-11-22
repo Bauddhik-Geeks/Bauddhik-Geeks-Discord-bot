@@ -12,30 +12,44 @@ class help(commands.Cog, name='help'):
     async def help(self, ctx):
         # The front page of the help command embed
         em_help = discord.Embed(title="Help", description="")
-        em_help.add_field(name="**Meme commands**", value="`%meme`")
-        em_help.add_field(name="**Resources commands**",
-                          value="`%python` \n`%javascript`\n `%react` \n`%cpp`")
+        em_help.add_field(name="__**Hangout commands**__",
+                          value="`%meme` - Get a random meme\n`%rps` - Play rock paper scissors\n`%joke` - Bored ???\n`%inspire` - Need some inspiration ??\n `%motivate` - Want some motivational posts?")
+        em_help.add_field(name="__**Socials**__",
+                          value="All social links for Bauddhik Geeks will be provided here")
+        em_help.add_field(name="__**Resources**__",
+                          value="All links will be provided for each field in IT plus how to contribute in open source\n`%python`\n`%javascript`\n`%reactjs`\n`%cpp`")
+        em_help.add_field(name="__**Info**__",
+                          value="`%hello` - Say hello to me\n`%ping` - Check latency")
 
         # The second page of the help command embed
-        em_help_meme = discord.Embed(title="Meme command", description="")
-        em_help_meme.add_field(name="**Syntax**", value="`%meme`")
-        em_help_meme.add_field(name="**Description**",
-                               value="Sends a random meme using [**this**](https://memes.blademaker.tv/api?lang=en) API")
-        em_help_meme.add_field(name="**Aliases**",
-                               value="`None`")
+        em_help_hangout = discord.Embed(
+            title="Hangout commands", description="")
+        em_help_hangout.add_field(
+            name="**Syntax**", value="`%meme`\n`%rps`\n`%joke`\n`%inspire`\n`%motivate`")
+        em_help_hangout.add_field(name="**Description**",
+                                  value="`%meme` - Sends a random meme using [**this**](https://memes.blademaker.tv/api?lang=en) API\n`%rps` - Play rock paper scissors with the bot\n`%joke` - Sends a one line jokes for programmers using `pyjokes` module\n`%inspire` - Sends inspirational posts\n`%motivate` - Sends motivational posts using [**this**](https://efflux.herokuapp.com/post) API")
+        em_help_hangout.add_field(name="**Aliases**",
+                                  value="`None`")
 
         # The third page of the help command embed
+        em_help_socials = discord.Embed(
+            title="Socials", description="<:github:912184960734081074> [**GitHub**](https://github.com/Bauddhik-Geeks)\n \n<:BG:912185310698422273> [**Website**](https://bauddhikgeeks.tech/)")
+
+        # The fourth page of the help command embed
         em_help_resources = discord.Embed(
-            title="Resources command", description="")
+            title="Resources", description="All links will be provided for each field in IT plus how to contribute in open source")
         em_help_resources.add_field(
-            name="**Syntax**", value="`%python` \n`%javascript`\n `%react` \n`%cpp`")
-        em_help_resources.add_field(name="**Description**",
-                                    value="These commands have the list of few resources which will be useful to improve/master your skills in that languages")
-        em_help_resources.add_field(name="**Aliases**",
-                                    value="`py` \n`js` \n`reactjs` \n`cpp`")
+            name="**Syntax**", value="`%python`\n`%javascript`\n`%reactjs`\n`%cpp`")
+        em_help_resources.add_field(
+            name="**Aliases**", value="`%py`\n`%js`\n`%react`\n`%c++`")
 
-        em_list = [em_help, em_help_meme, em_help_resources]
+        # The fifth page of the help command embed
+        em_help_info = discord.Embed(title="Info", description="")
+        em_help_info.add_field(name="**Syntax**", value="`%hello`\n`%ping`")
+        em_help_info.add_field(name="**Aliases**", value="`None`")
 
+        em_list = [em_help, em_help_hangout,
+                   em_help_socials, em_help_resources]
         messages = em_list
 
         # The user won't be able to use the buttons after 60 seconds
