@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Kira272921",
+      "name": "Kira",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90365542?v=4",
+      "profile": "https://github.com/Kira272921",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Bauddhik-Geeks-Discord-bot",
+  "projectOwner": "Bauddhik-Geeks",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
