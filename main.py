@@ -42,11 +42,16 @@ async def hello(ctx):
     await ctx.send('Hey :wave:! I am Bauddhik Geeks bot, Type `%help` to see what can I do :) !!')
 
 extensions = [
+    'cogs.utils.errorhandler',
     'cogs.meme.meme',
     'cogs.utils.ghostping',
     'cogs.utils.help',
     'cogs.utils.motivate',
     'cogs.utils.socials',
+    'cogs.utils.github.inforepo',
+    'cogs.utils.github.infouser',
+    'cogs.utils.github.searchrepo',
+    'cogs.utils.github.searchuser',
     'cogs.resources.resources'
 ]
 if __name__ == "__main__":
@@ -57,5 +62,4 @@ if __name__ == "__main__":
             print(f'Error loading {extension}', file=sys.stderr)
             traceback.print_exc()
 
-field = os.environ['token']
-client.run(field)
+client.run("ODg5NzczMzYwMTEwNzgwNDY4.YUmIBA.Dsyw-9ajm72pDY4kqGw-3IDfkGM")

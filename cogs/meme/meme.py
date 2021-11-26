@@ -15,7 +15,7 @@ class meme(commands.Cog, name='meme'):
     @tasks.loop(seconds=7200)
     async def automeme(self):
         # Here your channel ID will be there, in which auto meme will be posted after every 2 hrs
-        c = int(911523346724818947)
+        c = int(912618398712758286)
         channel1 = self.bot.get_channel(c)
         r = requests.get("https://memes.blademaker.tv/api?lang=en")
         res = r.json()
