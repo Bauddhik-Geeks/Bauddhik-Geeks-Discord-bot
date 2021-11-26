@@ -62,4 +62,6 @@ if __name__ == "__main__":
             print(f'Error loading {extension}', file=sys.stderr)
             traceback.print_exc()
 
-client.run("ODg5NzczMzYwMTEwNzgwNDY4.YUmIBA.Dsyw-9ajm72pDY4kqGw-3IDfkGM")
+
+field = os.environ['token']
+client.run(field)
