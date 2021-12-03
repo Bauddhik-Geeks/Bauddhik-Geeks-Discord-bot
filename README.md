@@ -18,7 +18,7 @@
 10. Take whatever code you changed and submit a pull request! When you forked it on Replit, it should create a fork in GitHub, so by using the version control tab in the left, you can contribute.
 11. Don't forget to update your profile on readme. 
 ---
-<h1 align="center">Contributors</h1>
+<h1 align="center">Maintainer</h1>
 
 <table>
   <tr>
