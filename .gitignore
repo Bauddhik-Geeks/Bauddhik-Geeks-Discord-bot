@@ -1,0 +1,4 @@
+.vscode
+cogs/meme/__pycache__
+cogs/resources/__pycache__
+cogs/utils/__pycache__

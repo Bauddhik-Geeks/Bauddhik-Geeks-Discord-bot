@@ -20,6 +20,8 @@ class help(commands.Cog, name='help'):
                           value="All links will be provided for each field in IT plus how to contribute in open source\n`%python`\n`%javascript`\n`%reactjs`\n`%cpp`")
         em_help.add_field(name="__**Info**__",
                           value="`%hello` - Say hello to me\n`%ping` - Check latency")
+        em_help.add_field(name="__**GitHub Search**__",
+                          value="`%gs_r <number_of_results_you_want> <repo_name>` - Sends the list of repos which are similar to the user's input\n `%gs_u <number_of_results_you_want> <user_name>` - Sends the list of users which are similar to the user's input \n`%gi_r <repo_name>` - Sends info about a repo \n`%gi_u <user_name>` - Sends info about an user")
 
         # The second page of the help command embed
         em_help_hangout = discord.Embed(
@@ -48,12 +50,18 @@ class help(commands.Cog, name='help'):
         em_help_info.add_field(name="**Syntax**", value="`%hello`\n`%ping`")
         em_help_info.add_field(name="**Aliases**", value="`None`")
 
+        # The sixth page of the help command embed
+        em_github = discord.Embed(
+            title="GitHub Search", description="These commands allows the user to search through repos and users and get their info via simple discord commands")
+        em_github.add_field(name="**Commands*",
+                            value="`%gs_r`- Sends the list of repos which are similar to the user's input\n`%gs_u`- Sends the list of users which are similar to the user's input\n`%gi_r`- Sends info about a repo\n`%gi_u`- Sends info about an user")
+
         em_list = [em_help, em_help_hangout,
-                   em_help_socials, em_help_resources]
+                   em_help_socials, em_help_resources, em_github]
         messages = em_list
 
         # The user won't be able to use the buttons after 60 seconds
-        await discordSuperUtils.ButtonsPageManager(ctx, messages, timeout=60).run()
+        await discordSuperUtils.ButtonsPageManager(ctx, messages, timeout=180).run()
 
 
 def setup(client):
