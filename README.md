@@ -5,7 +5,7 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-## Should you have any questions, please join the [Discord](https://discord.gg/atzZYdNMDF) and ask in `#Bot`
+## Do you have any questions, please join the [Discord](https://discord.gg/atzZYdNMDF) and ask in `#Bot`
 
 ## How to Contribute
 1. Go to [Discord Developer](https://discord.com/developers/applications) and create a New Application
